@@ -1,13 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html class="dark">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+    <title>Phishing Warning</title>
+    <!-- Include Tailwind CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.15/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Set the background color to black -->
+    <style>
+      body {
+        background-color: #1a202c;
+      }
+      .box {
+        margin: 0 auto;
+        padding: 1rem;
+        max-width: 600px;
+        background-color: #2d3748;
+        border-radius: 0.5rem;
+      }
+      h2::before {
+        content: "";
+        display: block;
+        border-top: 1px solid #4a5568;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+      }
+    </style>
   </head>
-  <body>
-    <div id="message">
-      <h1>Welcome</h1>
+  <body class="flex justify-center items-center h-screen">
+    <div class="box">
+      <h1 class="text-4xl font-bold text-white mb-4 text-center">Phishing Warning</h1>
+      <h2 class="text-xl font-bold text-white mb-4 text-center">You have clicked on a potential phishing link</h2>
+      <p class="text-lg text-gray-400 mb-4 text-center text-justify">Phishing links are dangerous and can steal your personal information. Phishing is a type of online scam where attackers create fake websites or emails that look like legitimate ones in order to trick you into giving them your personal information, such as your login credentials, credit card numbers, or social security number. These attacks can be very convincing and often use social engineering tactics to make you feel like you need to act quickly. Please be careful when clicking on links from unknown sources and always check the URL of the website you are visiting to make sure it is legitimate.</p>
+      <h2 class="text-xl font-bold text-white mb-4 text-center">How to Detect if a Link is Good or Not</h3>
+      <p class="text-lg text-gray-400 mb-8 text-center">Here are some tips for detecting if a link is good or not:</p>
+      <ul class="list-disc text-lg text-gray-400 mb-8 pl-4">
+        <li>Check the URL of the website you are visiting to make sure it is legitimate. Attackers often create fake websites with URLs that are similar to legitimate ones, so be sure to double-check the spelling and domain name.</li>
+        <li>Hover over the link to see the URL it will take you to. If the URL looks suspicious or doesn't match the text of the link, don't click on it.</li>
+        <li>Use a link scanner or website reputation service to check if the website is known to be malicious or not. These services can help you identify phishing websites and other types of online scams.</li>
+      </ul>
+      <a href="https://de.wikipedia.org/wiki/Phishing" class="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">Learn More</a>
     </div>
   </body>
 </html>
